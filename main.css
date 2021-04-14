@@ -1,0 +1,35 @@
+body {
+  color: dodgerblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50%;
+  }
+  header h1 {
+    font-weight: lighter;
+  }
+  article.main-page-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  h2.headline {
+    display: flex;
+    font-weight: bold;
+    align-items: flex-start;
+    width: 70%;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
