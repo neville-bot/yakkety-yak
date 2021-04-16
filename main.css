@@ -4,8 +4,8 @@ body {
   font-weight: lighter;
 }
 
-@media (min-width: 480px) {
-  /* smartphones, Android phones, landscape iPhone */
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
   header {
     display: flex;
     flex-direction: row;
@@ -15,6 +15,7 @@ body {
   }
   main {
     padding-left: 10px;
+    padding-right: 10px;
   }
   header h1 {
     font-weight: lighter;
@@ -29,6 +30,19 @@ body {
     align-items: flex-start;
     width: 70%;
     font-size: 30px;
+  }
+  h3.headline {
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 13em;
+  }
+  h3.headline-center {
+    text-align: center;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 13em;
   }
   /* email form */
   .email-form {
@@ -64,13 +78,18 @@ body {
   }
   p {
     margin: auto;
-    width: 70%;
+    text-align: center;
     padding: 10px;
-
-    /*
-    padding: 0 30px 0 30px;
-    font-size: 16px;
-    align-content: center; */
+  }
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .feature-card {
+    flex-basis: 50%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
   }
 }
 
