@@ -37,6 +37,12 @@ body {
     margin-right: auto;
     width: 13em;
   }
+  h3.headline {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 13em;
+  }
   h3.headline-center {
     text-align: center;
     font-size: 24px;
@@ -57,10 +63,11 @@ body {
     width: 120px;
     vertical-align: middle;
     font-size: 20px;
-    /* :hover {
-        border: 1px solid #1052B4;
-     */
   }
+  .newsletter-form {
+    height: 60px;
+  }
+
   button:hover {
     border: 1px solid #1052b4;
   }
@@ -76,20 +83,88 @@ body {
     vertical-align: middle;
     font-size: 20px;
   }
+  .newsletter-form input {
+    background-color: rgb(208, 232, 248);
+    font-family: inherit;
+    border: none;
+    height: 100%;
+    width: 220px;
+    vertical-align: middle;
+    font-size: 16px;
+  }
+  .newsletter-form button {
+    background-color: rgb(208, 232, 248);
+    font-family: inherit;
+    border: none;
+    height: 100%;
+    width: 60px;
+    vertical-align: middle;
+  }
   p {
     margin: auto;
     text-align: center;
     padding: 10px;
   }
+  /* feature card */
   .features {
     display: flex;
     flex-wrap: wrap;
   }
   .feature-card {
-    flex-basis: 50%;
+    flex-basis: 46%;
     display: flex;
+    padding: 2%;
     flex-grow: 1;
     flex-direction: column;
+  }
+  .feature-card h5 {
+    margin: 0;
+    font-weight: lighter;
+  }
+  footer {
+    background-color: rgb(226, 225, 225);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 10px;
+  }
+  footer h6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-weight: lighter;
+    width: 80%;
+    margin: 15px 0 15px 0;
+    color: #696969;
+    font-size: 14px;
+  }
+  .nav-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .page-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    padding-inline-start: 0;
+  }
+  /* spacing list items */
+  .social-nav {
+    padding-inline-start: 0;
+  }
+  .nav-footer li {
+    list-style: none;
+    padding-bottom: 15px;
+  }
+  .social-nav li img {
+    width: 15px;
+    height: 15px;
+  }
+  .footer-license {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
   }
 }
 
