@@ -10,42 +10,60 @@
   <body>
     <div class="root">
       <header>
-        <a href="#menu">
-          <img
-            src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/30-512.png"
-            alt=""
-            height="40px"
-            width="40px"
-          />
-        </a>
+        <div class="menu-toggle">
+          <a href="#menu">
+            <img
+              src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/30-512.png"
+              alt=""
+              height="40px"
+              width="40px"
+            />
+          </a>
+        </div>
+
+        <div class="main-menu">
+          <ul class="main-menu-list">
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+            <li>Fifth</li>
+          </ul>
+        </div>
         <h1>ACME</h1>
+        <button class="blue">Action</button>
       </header>
       <main class="main-content">
         <article class="main-page-content">
-          <img src="./Assets/Images/Image1.jpg" alt="skyline" max-width: 100%;
-          height: auto; />
-          <h3>Tagline</h3>
-          <h2 class="headline">Medium length display headline</h2>
+          <img src="./Assets/Images/Image1.jpg" alt="skyline" />
+          <div class="article-content">
+            <h3>Tagline</h3>
+            <h2 class="headline">Medium length display headline</h2>
+            <div class="email-form">
+              <input type="text" placeholder="Placeholder" />
+              <button class="blue">Action</button>
+
+              <p>
+                By clicking the Button you confirming that you’re agree with our
+                following Terms and Conditions
+              </p>
+            </div>
+          </div>
         </article>
-        <div class="email-form">
-          <input type="text" placeholder="Placeholder" />
-          <button>Action</button>
-        </div>
-        <p>
-          By clicking the Button you confirming that you’re agree with our
-          following Terms and Conditions
-        </p>
+
         <article class="main-page-content">
-          <h3 class="article-tagline">Tagline</h3>
-          <h3 class="headline-center">
-            Long headline to turn your visitors into users
-          </h3>
-          <p>
-            Change the color to match your brand or vision, add your logo,
-            choose the perfect thumbnail, remove the playbar, add speed
-            controls, and more. Increase engagement with CTAs and custom end
-            screens, or keep your video private and password-protected.
-          </p>
+          <div class="article-content-center">
+            <h3 class="article-tagline">Tagline</h3>
+            <h3 class="headline-center">
+              Long headline to turn your visitors into users
+            </h3>
+            <p>
+              Change the color to match your brand or vision, add your logo,
+              choose the perfect thumbnail, remove the playbar, add speed
+              controls, and more. Increase engagement with CTAs and custom end
+              screens, or keep your video private and password-protected.
+            </p>
+          </div>
           <img src="Assets/Images/Image2.jpg" alt="building" max-width: 100%;
           height: auto;/>
           <h3 class="headline">

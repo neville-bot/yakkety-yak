@@ -1,4 +1,6 @@
+/* documebt config */
 body {
+  box-sizing: border-box;
   color: dodgerblue;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: lighter;
@@ -6,12 +8,13 @@ body {
 
 @media (min-width: 320px) {
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+  /* header */
   header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding-right: 50%;
+    /* padding-right: 50%; */
   }
   main {
     padding-left: 10px;
@@ -19,10 +22,16 @@ body {
   }
   header h1 {
     font-weight: lighter;
+    text-align: center;
   }
+  /* article cards */
   article.main-page-content {
     display: flex;
     flex-direction: column;
+  }
+  .main-page-content img {
+    max-width: 100%;
+    height: auto;
   }
   h2.headline {
     display: flex;
@@ -54,7 +63,8 @@ body {
   .email-form {
     height: 60px;
   }
-  .email-form button {
+  /* blue button! */
+  .blue {
     background-color: dodgerblue;
     color: white;
     font-family: inherit;
@@ -170,4 +180,53 @@ body {
 
 @media (min-width: 801px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+  /* disappear hamburger! */
+  .menu-toggle {
+    display: none;
+  }
+  /* re-appear menu! */
+  .main-menu {
+    display: flex;
+    width: 50%;
+  }
+  .main-menu-list {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+    padding-inline-start: 10px;
+  }
+  .main-menu li {
+    list-style: none;
+    display: flex;
+  }
+  /* end menu */
+  /* resize blue button for desktop */
+  .blue {
+    width: 70px;
+  }
+  /* resize iamge for desktop */
+  article.main-page-content {
+    flex-direction: row;
+    order: 1;
+  }
+  /* everything in article except image */
+  .article-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+  }
+  .article-content-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-page-content img {
+    max-width: 40%;
+    height: 300px;
+    order: 2;
+  }
 }
