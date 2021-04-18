@@ -45,6 +45,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 13em;
+    /* changed in desktop  for middle 
+    article*/
+    margin-top: 0;
   }
   h3.headline {
     font-size: 18px;
@@ -190,6 +193,13 @@ body {
     display: flex;
     width: 50%;
   }
+  .main-menu-right {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+  }
   .main-menu-list {
     flex-direction: row;
     display: flex;
@@ -207,10 +217,34 @@ body {
   .blue {
     width: 70px;
   }
+  /* resize texts */
+  p {
+    margin: auto 0 auto 0;
+    width: 22em;
+    font-size: 14px;
+  }
   /* resize iamge for desktop */
+  /* main page content for mobile and 
+  desktop is the parent component
+  to set flex row or column */
+  /* set article left-hand side */
   article.main-page-content {
     flex-direction: row;
     order: 1;
+  }
+  /* set article right-hand side */
+  article.main-page-content-right {
+    flex-direction: row;
+    order: 2;
+    display: flex;
+    padding-left: 60px;
+  }
+  article.main-page-content-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
   }
   /* everything in article except image */
   .article-content {
@@ -221,12 +255,59 @@ body {
   .article-content-center {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
-
+  /* image to the right */
   .main-page-content img {
     max-width: 40%;
     height: 300px;
     order: 2;
+  }
+  /* image to the left */
+  .main-page-content-right img {
+    max-width: 40%;
+    height: 300px;
+  }
+  .article-feature-wrapper {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    width: 400px;
+  }
+  h3.headline {
+    width: fit-content;
+  }
+  /* feature cards desktop fix,
+  was stretching due to flex-wrap-wrap */
+  .features {
+    flex-wrap: nowrap;
+    height: 150px;
+  }
+  .main-page-content-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-page-content-bottom img {
+    width: 100%;
+  }
+  .last-articles {
+    display: flex;
+    flex-direction: row;
+  }
+  .page-footer {
+    flex-direction: row;
+  }
+  .newsletter-wrapper {
+    margin: auto;
+  }
+  .footer-license {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .social-nav {
+    padding-left: 70px;
   }
 }
