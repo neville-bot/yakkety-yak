@@ -4,30 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="sass/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      language="Javascript"
+      type="text/javascript"
+      src="utilities.js"
+    ></script>
     <title>ACME</title>
   </head>
   <body>
     <div class="root">
+      <!-- Navbar -->
       <header>
-        <div class="menu-toggle">
-          <a href="#menu">
-            <img
-              src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/30-512.png"
-              alt=""
-              height="40px"
-              width="40px"
-            />
-          </a>
+        <div class="menu-toggle" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
 
         <div class="main-menu">
-          <ul class="main-menu-list">
-            <li>First</li>
-            <li>Second</li>
-            <li>Third</li>
-            <li>Fourth</li>
-            <li>Fifth</li>
+          <ul id="main-menu-list" class="menu-hidden">
+            <li><a href="">First</a></li>
+            <li><a href="">Second</a></li>
+            <li><a href="">Third</a></li>
+            <li><a href="">Fourth</a></li>
+            <li><a href="">Fifth</a></li>
           </ul>
         </div>
         <div class="main-menu-right">
@@ -35,6 +38,7 @@
           <button class="blue">Action</button>
         </div>
       </header>
+
       <main class="main-content">
         <article class="main-page-content">
           <img src="./Assets/Images/Image1.jpg" alt="skyline" />
@@ -43,8 +47,29 @@
             <h2 class="headline">Medium length display headline</h2>
             <div class="email-form">
               <input type="text" placeholder="Placeholder" />
-              <button class="blue">Action</button>
-
+              <!-- modal -->
+              <button
+                href="#"
+                class="blue open-modal"
+                data-modal="#modal1"
+                onclick="modalToggle()"
+              >
+                Action
+              </button>
+              <div class="overlay">
+                <div class="modal" id="modal1">
+                  <div class="content">
+                    <h1 class="title">Thanks for subscribing!</h1>
+                    <p>
+                      Click the button to close.
+                    </p>
+                    <a class="btn close-modal" data-modal="#modal1" href="#"
+                      >Close</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- modal -->
               <p>
                 By clicking the Button you confirming that you’re agree with our
                 following Terms and Conditions
@@ -147,9 +172,14 @@
           <h6>
             Join our newsletter to stay up to date on features and releases
           </h6>
-          <div class="newsletter-form">
+          <div class="email-form">
             <input type="text" placeholder="Enter your email address" />
-            <button>
+            <button
+              href="#"
+              class="open-modal send-button"
+              data-modal="#modal1"
+              onclick="modalToggle()"
+            >
               <img
                 src="Assets/Icons/Ok.png"
                 alt="send button"
@@ -157,6 +187,19 @@
                 width="10"
               />
             </button>
+            <div class="overlay">
+              <div class="modal" id="modal1">
+                <div class="content">
+                  <h1 class="title">Thanks for subscribing!</h1>
+                  <p>
+                    Click the button to close.
+                  </p>
+                  <a class="btn close-modal" data-modal="#modal1" href="#"
+                    >Close</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <nav>
